@@ -1,9 +1,10 @@
 import React from 'react'
+import Projects from '../../project-content'
 
 function Project() {
   return (
     <div>
-      <h1>Project</h1>
+      <Projects/>
     </div>
   )
 }

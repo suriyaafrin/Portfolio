@@ -2,7 +2,7 @@ import React from "react";
 
 
 import { Outlet } from "react-router-dom";
-import PortfolioFooter from "../component/footer";
+import Footer from "../component/footer";
 import Navbar from "../component/navbar/navbar";
 
 function Layout() {
@@ -10,7 +10,7 @@ function Layout() {
     <>
       <Navbar />
       <Outlet />
-      <PortfolioFooter />
+      <Footer />
     </>
   );
 }
