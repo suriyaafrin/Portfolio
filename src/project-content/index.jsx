@@ -1,4 +1,3 @@
-
 import { FaWhatsapp, FaCloudSun } from "react-icons/fa";
 import { Reveal } from "../front-Sec/hero";
 
@@ -26,11 +25,13 @@ const minis = [
     icon: <FaWhatsapp />,
     title: "WhatsApp UI Clone",
     desc: "A pixel-accurate recreation of the WhatsApp Web interface, focused on layout precision and component structure.",
+    demo: "https://startling-arithmetic-0452cd.netlify.app/",
   },
   {
     icon: <FaCloudSun />,
     title: "Weather Update App",
     desc: "A responsive weather app pulling live conditions and forecasts through a public weather API.",
+    demo: "https://teal-sable-5e7b0c.netlify.app/",
   },
 ];
 
@@ -43,7 +44,9 @@ export default function Projects() {
             <span className="text-[#C8102E] inline-flex justify-center items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.08em] text-primary mb-4 before:content-[''] before:w-[18px] before:h-[2px] before:bg-primary before:rounded-full">
               Featured Projects
             </span>
-            <h2 className="text-[34px] font-bold text-heading ">Things I've built</h2>
+            <h2 className="text-[34px] font-bold text-heading ">
+              Things I've built
+            </h2>
             <p className="text-[16px] mt-3.5 text-gray-600">
               Real, deployed products — from a movie discovery platform to a
               home services marketplace.
@@ -54,7 +57,7 @@ export default function Projects() {
             {featured.map((p) => (
               <Reveal
                 key={p.name}
-                className="bg-white border border-border border-gray-200 rounded-[20px] overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-cardHover hover:border-[#F1D3D8] transition-all duration-300"
+                className=" bg-white border border-border border-gray-200 rounded-[20px] overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-cardHover hover:border-[#F1D3D8] transition-all duration-300"
               >
                 <div
                   className={`aspect-[16/10] bg-gradient-to-br ${p.gradient} flex items-center justify-center`}
@@ -64,18 +67,20 @@ export default function Projects() {
                   </span>
                 </div>
                 <div className="p-7 pb-[30px] flex flex-col flex-1">
-                  <span className="text-[12px] font-semibold text-primary uppercase tracking-[.06em] mb-2">
+                  <span className="text-[#C8102E] text-[12px] font-semibold text-primary uppercase tracking-[.06em] mb-2">
                     {p.tag}
                   </span>
-                  <h3 className="text-[22px] mb-2.5 text-heading">{p.name}</h3>
-                  <p className="text-[14.5px] text-body mb-[18px] flex-1">
+                  <h3 className="font-bold text-[22px] mb-2.5 text-heading">
+                    {p.name}
+                  </h3>
+                  <p className="text-gray-500 text-[14.5px] text-body mb-[18px] flex-1">
                     {p.desc}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-[22px]">
                     {p.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-[12px] font-medium bg-sectionAlt text-body px-3 py-1.5 rounded-[7px]"
+                        className="bg-gray-100 text-gray-600 text-[12px] font-medium bg-sectionAlt text-body px-3 py-1.5 rounded-[7px]"
                       >
                         {t}
                       </span>
@@ -86,7 +91,7 @@ export default function Projects() {
                       href={p.demo}
                       target="_blank"
                       rel="noopener"
-                      className="text-[14px] font-semibold px-[18px] py-2.5 rounded-[10px] bg-primary text-white hover:bg-primary-hover transition-colors"
+                      className="bg-[#C8102E] text-[14px] font-semibold px-[18px] py-2.5 rounded-[10px] bg-primary text-white hover:bg-[#A80D26] transition-colors"
                     >
                       Live Demo
                     </a>
@@ -94,7 +99,7 @@ export default function Projects() {
                       href="https://github.com/suriyaafrin"
                       target="_blank"
                       rel="noopener"
-                      className="text-[14px] font-semibold px-[18px] py-2.5 rounded-[10px] border border-border text-heading hover:bg-sectionAlt transition-colors"
+                      className="border-gray-200 text-[14px] font-semibold px-[18px] py-2.5 rounded-[10px] border border-border text-heading hover:bg-gray-100 transition-colors"
                     >
                       GitHub
                     </a>
@@ -108,26 +113,35 @@ export default function Projects() {
             {minis.map((m) => (
               <Reveal
                 key={m.title}
-                className="bg-white border border-border rounded-2xl p-[26px] flex gap-4 items-start hover:-translate-y-1 hover:shadow-[0_16px_32px_-14px_rgba(24,24,27,0.14)] hover:border-[#F1D3D8] transition-all duration-300"
+                className=" bg-white border-gray-200 border border-border rounded-2xl p-[26px] flex gap-4 items-start hover:-translate-y-1 hover:shadow-[0_16px_32px_-14px_rgba(24,24,27,0.14)] hover:border-[#F1D3D8] transition-all duration-300"
               >
-                <div className="w-11 h-11 rounded-[11px] bg-sectionAlt flex items-center justify-center text-primary shrink-0 text-[18px]">
+                <div className="text-[#C8102E]  w-11 h-11 rounded-[11px] bg-sectionAlt flex items-center justify-center text-primary shrink-0 text-[18px]">
                   {m.icon}
                 </div>
                 <div>
-                  <h4 className="text-[16.5px] mb-1 text-heading">{m.title}</h4>
-                  <p className="text-[13.5px]">{m.desc}</p>
+                  <h4 className="font-bold text-[16.5px] mb-1 text-heading">
+                    {m.title}
+                  </h4>
+                  <p className="text-gray-600 text-[13.5px]">{m.desc}</p>
                   <div className="flex gap-3 mt-2.5">
+                    <a
+                      href={m.demo}
+                      target="_blank"
+                      rel="noopener"
+                      className="hover:text-[#A80D26] text-[#C8102E] text-[13px] font-bold text-primary hover:text-primary-hover"
+                    >
+                      Live Demo →
+                    </a>
                     <a
                       href="https://github.com/suriyaafrin"
                       target="_blank"
                       rel="noopener"
-                      className="text-[13px] font-semibold text-primary hover:text-primary-hover"
+                      className="hover:text-[#A80D26] text-[#C8102E] text-[13px] font-bold text-primary hover:text-primary-hover"
                     >
                       GitHub →
                     </a>
                   </div>
                 </div>
-              
               </Reveal>
             ))}
           </div>

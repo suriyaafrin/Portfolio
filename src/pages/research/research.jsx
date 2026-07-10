@@ -1,11 +1,10 @@
 import React from 'react'
+import ResearchContent from '../../research-Content'
 
 function Research() {
-  return (
-    <div>
-      <h1>Research</h1>
-    </div>
-  )
+  return <ResearchContent/>
+    
+  
 }
 
 export default Research

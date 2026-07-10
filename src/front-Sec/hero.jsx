@@ -113,7 +113,8 @@ export default function Hero() {
                 View Projects
               </a>
               <a
-                href="#"
+                href="/resume.pdf"
+                download="Suriya-Afrin-Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-[26px] py-[13px] rounded-xl bg-white text-heading border border-border hover:bg-[#FDEEEF] hover:border-primary hover:text-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] transition-all"
               >
                 Download CV

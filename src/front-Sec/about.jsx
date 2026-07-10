@@ -5,6 +5,7 @@ import {
   FaMapMarkerAlt,
   FaFileAlt,
   FaBullseye,
+  FaDownload,
 } from "react-icons/fa";
 
 const FACTS = [
@@ -48,7 +49,7 @@ function useReveal() {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     observer.observe(node);
@@ -92,7 +93,7 @@ export default function About() {
               About Me
             </span>
 
-            <h2 className="mb-[18px] font-['Space_Grotesk',sans-serif] text-[34px] font-bold leading-[1.15] tracking-[-0.02em] text-[#18181B]">
+            <h2 className="mb-4.5 font-['Space_Grotesk',sans-serif] text-[34px] font-bold leading-[1.15] tracking-[-0.02em] text-[#18181B]">
               Hello!
             </h2>
 
@@ -102,17 +103,27 @@ export default function About() {
             </p>
             <p className="mb-4 max-w-[520px] text-base text-[#52525B]">
               I primarily work with React, JavaScript, and Tailwind CSS to
-              create responsive interfaces with reusable components and
-              clean architecture. I like paying attention to the small
-              details — smooth interactions, consistent design, and code
-              that's easy to maintain.
+              create responsive interfaces with reusable components and clean
+              architecture. I like paying attention to the small details —
+              smooth interactions, consistent design, and code that's easy to
+              maintain.
             </p>
             <p className="mb-4 max-w-[520px] text-base text-[#52525B]">
               Outside of frontend development, I enjoy exploring artificial
-              intelligence, which led me to contribute to research accepted
-              at ICCIT 2025. I'm always excited to take on new challenges
-              and keep growing as a developer.
+              intelligence, which led me to contribute to research accepted at
+              ICCIT 2025. I'm always excited to take on new challenges and keep
+              growing as a developer.
             </p>
+
+            {/* Download CV button */}
+            <a
+              href="/resume.pdf"
+              download="Suriya-Afrin-Resume.pdf"
+              className="mb-8 inline-flex items-center gap-2 rounded-xl bg-[#C8102E] px-6 py-3 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#a80d26]"
+            >
+              <FaDownload size={14} />
+              Download CV
+            </a>
 
             {/* Facts grid */}
             <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-7 sm:gap-y-5">
