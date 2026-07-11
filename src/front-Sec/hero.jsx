@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { target: 4, label: "Projects Shipped" },
@@ -106,12 +107,13 @@ export default function Hero() {
               React Frontend Developer
             </span>
             <p className="text-[17px] max-w-[460px] mb-9 text-body">
-              <a
-                href="#projects"
+              <Link
+                to="/projects"
                 className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-[26px] py-[13px] rounded-xl bg-primary text-white bg-[#C8102E] shadow-primaryGlow hover:bg-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-primaryGlowHover transition-all mr-4"
               >
                 View Projects
-              </a>
+              </Link>
+
               <a
                 href="/resume.pdf"
                 download="Suriya-Afrin-Resume.pdf"
@@ -131,7 +133,7 @@ export default function Hero() {
           </Reveal>
 
           <Reveal
-            startVisible
+           
             className="order-first md:order-last flex items-center justify-center relative"
           >
             <div className="absolute w-[380px] h-[380px] rounded-full bg-[radial-gradient(circle,rgba(200,16,46,0.28)_0%,rgba(200,16,46,0.08)_45%,rgba(200,16,46,0)_70%)] blur-[10px]" />

@@ -8,8 +8,7 @@ const skills = [
   "Zustand",
   "Git",
   "REST API",
-  "Python",
-  "Django",
+  "Responsive Web Design",
 ];
 
 export default function Skills() {
