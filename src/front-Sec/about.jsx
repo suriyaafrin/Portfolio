@@ -65,7 +65,7 @@ export default function About() {
     <section id="about" className="bg-[#F4F4F5] py-20 md:py-[120px]">
       <div className="mx-auto max-w-290 px-8">
         <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-[72px]">
-          {/* Photo */}
+
           <div
             ref={photoRef}
             className={`aspect-[1/1.05] w-full rounded-3xl border border-[#E4E4E7] bg-gradient-to-br from-white to-[#F4F4F5] flex items-center justify-center font-['Space_Grotesk',sans-serif] text-6xl font-bold text-[#C8102E] transition-all duration-700 ease-out ${
@@ -77,7 +77,7 @@ export default function About() {
             SA
           </div>
 
-          {/* Content */}
+
           <div
             ref={contentRef}
             className={`transition-all duration-700 ease-out ${
