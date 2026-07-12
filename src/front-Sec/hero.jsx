@@ -91,10 +91,10 @@ function Counter({ target }) {
 export default function Hero() {
   return (
     <>
-      <section className="pt-[190px] pb-[120px] bg-sectionAlt overflow-hidden">
-        <div className="container mx-auto max-w-[1160px] px-8 grid md:grid-cols-[1.05fr_0.85fr] gap-16 items-center">
+      <section className="pt-47.5 pb-30 bg-sectionAlt overflow-hidden">
+        <div className="container mx-auto max-w-290 px-8 grid md:grid-cols-[1.05fr_0.85fr] gap-16 items-center">
           <Reveal startVisible>
-            <span className="inline-flex items-center gap-2 text-[#C8102E] text-[13px] font-semibold uppercase tracking-[0.08em] text-primary mb-4 before:content-[''] before:w-[18px] before:h-[2px] before:bg-primary before:rounded-full">
+            <span className="inline-flex items-center gap-2 text-[#C8102E] text-[13px] font-semibold uppercase tracking-[0.08em] text-primary mb-4 before:content-[''] before:w-4.5 before:h-0.5 before:bg-primary before:rounded-full">
               Available for opportunities
             </span>
             <span className="font-head text-[22px] font-semibold text-heading block mb-1">
@@ -106,10 +106,10 @@ export default function Hero() {
             <span className="font-head text-[22px] font-semibold text-heading block mt-1 mb-6">
               React Frontend Developer
             </span>
-            <p className="text-[17px] max-w-[460px] mb-9 text-body">
+            <p className="text-[17px] max-w-115 mb-9 text-body">
               <Link
                 to="/projects"
-                className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-[26px] py-[13px] rounded-xl bg-primary text-white bg-[#C8102E] shadow-primaryGlow hover:bg-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-primaryGlowHover transition-all mr-4"
+                className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-6.5 py-3.25 rounded-xl bg-primary text-white bg-[#C8102E] shadow-primaryGlow hover:bg-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-primaryGlowHover transition-all mr-4"
               >
                 View Projects
               </Link>
@@ -117,7 +117,7 @@ export default function Hero() {
               <a
                 href="/resume.pdf"
                 download="Suriya-Afrin-Resume.pdf"
-                className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-[26px] py-[13px] rounded-xl bg-white text-heading border border-border hover:bg-[#FDEEEF] hover:border-primary hover:text-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] transition-all"
+                className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-6.5 py-3.25 rounded-xl bg-white text-heading border border-border hover:bg-[#FDEEEF] hover:border-primary hover:text-primary-hover hover:-translate-y-0.5 hover:scale-[1.02] transition-all"
               >
                 Download CV
               </a>
@@ -136,8 +136,8 @@ export default function Hero() {
            
             className="order-first md:order-last flex items-center justify-center relative"
           >
-            <div className="absolute w-[380px] h-[380px] rounded-full bg-[radial-gradient(circle,rgba(200,16,46,0.28)_0%,rgba(200,16,46,0.08)_45%,rgba(200,16,46,0)_70%)] blur-[10px]" />
-            <div className="relative z-10 w-[340px] h-[340px] rounded-[32px] bg-gradient-to-br from-sectionAlt text-[#C8102E] to-white border border-border flex items-center justify-center font-head text-[88px] font-bold text-primary shadow-card">
+            <div className="absolute w-95 h-95 rounded-full bg-[radial-gradient(circle,rgba(200,16,46,0.28)_0%,rgba(200,16,46,0.08)_45%,rgba(200,16,46,0)_70%)] blur-[10px]" />
+            <div className="relative z-10 w-85 h-85 rounded-4xl bg-linear-to-br from-sectionAlt text-[#C8102E] to-white border border-border flex items-center justify-center font-head text-[88px] font-bold text-primary shadow-card">
               SA
             </div>
           </Reveal>

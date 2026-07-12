@@ -46,7 +46,7 @@ const rows = [
 
 export default function ContactContent() {
   return (
-    <section id="contact" className="py-[120px] bg-sectionAlt">
+    <section id="contact" className="py-30 bg-sectionAlt">
       <div className="container mx-auto max-w-[1160px] px-8">
         <Reveal className="max-w-[600px] mx-auto bg-white border border-gray-200 rounded-3xl p-14 text-center shadow-[0_30px_60px_-30px_rgba(24,24,27,0.14)]">
           <h2 className="text-[30px] mb-3 text-heading font-bold">

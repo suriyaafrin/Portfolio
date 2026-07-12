@@ -31,9 +31,7 @@ const FACTS = [
   },
 ];
 
-// Small local hook so this section fades/slides in the first time it
-// scrolls into view — mirrors the .reveal / .reveal.in behavior from
-// the static markup, without needing a global store for it.
+
 function useReveal() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -115,7 +113,7 @@ export default function About() {
               growing as a developer.
             </p>
 
-            {/* Download CV button */}
+          
             <a
               href="/resume.pdf"
               download="Suriya-Afrin-Resume.pdf"
@@ -125,7 +123,7 @@ export default function About() {
               Download CV
             </a>
 
-            {/* Facts grid */}
+
             <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-7 sm:gap-y-5">
               {FACTS.map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-3">
@@ -143,7 +141,7 @@ export default function About() {
                 </div>
               ))}
 
-              {/* Focus — spans both columns like the static markup */}
+             
               <div className="flex items-start gap-3 sm:col-span-2">
                 <div className="flex h-[38px] w-[38px] flex-shrink-0 items-center justify-center rounded-[10px] bg-[#FDEEEF] text-[#C8102E]">
                   <FaBullseye size={16} />
